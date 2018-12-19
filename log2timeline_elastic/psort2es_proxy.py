@@ -1087,7 +1087,7 @@ class ClientThread(threading.Thread):
                             target_host_socket.setblocking(1) # we want to wait for the replay right now
                             d = target_host_socket.recv(10240)
                             print("INTERCEPTED REPLAY:", d)
-                            msg = "PUT /" + index_name + "/_mapping/"+document_name + ' HTTP/1.1\r\nHost: 127.0.0.1:9200\r\nAccept-Encoding: identity\r\nContent-Length: ' + \
+                            msg = "PUT /" + index_name + "/_mapping/"+document_name + ' HTTP/1.1\r\nHost: 127.0.0.1:'+proxy_listening_port+'\r\nAccept-Encoding: identity\r\nContent-Length: ' + \
                                   str(len(putmappingbody)) + '\r\nconnection: keep-alive\r\ncontent-type: application/json\r\n\r\n' + putmappingbody
                             print("ADD MAPPING for " + index_name)
                             target_host_socket.setblocking(0)
