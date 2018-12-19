@@ -4,6 +4,10 @@
 #
 # PLASO psort to ElasticSearch TCP proxy.
 #
+# IMPORTANT: This script is a "hack" and not a full-fledged "download and run" application. 
+# You will need to adapt it in order to make it do what you want it to do.
+# Moreover, it has no connection to the PLASO project. 
+#
 # Deals with this issue:
 #    https://github.com/log2timeline/plaso/issues/1156
 #
@@ -19,9 +23,6 @@
 #    https://github.com/log2timeline/plaso/issues/1879
 #
 # Tested with log2timeline 20180818.
-#
-# IMPORTANT: This is a "hack" and not a full-fledged "download and run" application. You will need to adapt it in order
-# to make it do what you want it to do.
 #
 # Based on SimpleTCPRedirector: https://gist.github.com/sivachandran/1969859
 #
