@@ -14,7 +14,9 @@ https://github.com/log2timeline/plaso/issues/1156
 
 The reason is that PSORT lets ES decide on the format of the index, which is deduced from the first values
 submitted. This proxy intercepts the creation call and adds a mapping, so the fields are in the right format
-despite of the values sent by psort.
+despite of the values sent by psort. Listens on 9201, forwards to 9200.
+
+    psort command line: psort.py -o elastic --port 9201 --index_name "tralala" tl.plaso
 
 The problem will be addressed by this issue later-on:
 https://github.com/log2timeline/plaso/issues/1879
