@@ -21,6 +21,11 @@ despite of the values sent by psort. Listens on 9201, forwards to 9200.
 The problem will be addressed by this issue later-on:
 https://github.com/log2timeline/plaso/issues/1879
 
+IMPORTANT: This script is a "hack" and not a full-fledged "download and run" application. 
+You will need to adapt it in order to make it do what you want it to do.
+Moreover, it has no connection to the PLASO project and once enhancement 1879 is implemented
+you should go for this solution.
+
 Tested with log2timeline 20180818.
 
 IMPORTANT: This is a "hack" and not a full-fledged "download and run" application. You will need to adapt it in order
