@@ -994,6 +994,33 @@ putmappingbody= '''
                         }
                     }
                 },
+                "type": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 2048,
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "terminal_identifier": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 2048,
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "user_identifier": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 2048,
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "env_var_location": {
                     "copy_to": [
                         "alldata"
