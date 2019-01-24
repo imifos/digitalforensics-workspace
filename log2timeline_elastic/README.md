@@ -28,8 +28,5 @@ you should go for this solution.
 
 Tested with log2timeline 20180818.
 
-IMPORTANT: This is a "hack" and not a full-fledged "download and run" application. You will need to adapt it in order
-to make it do what you want it to do.
-
 Based on SimpleTCPRedirector: https://gist.github.com/sivachandran/1969859
 
